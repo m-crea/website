@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="apple-touch-icon" sizes="57x57" href="../icones/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../icones/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../icones/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../icones/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../icones/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../icones/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../icones/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icones/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icones/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../icones/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../icones/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icones/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> M, Direction et solutions artistiques </title>
+    <link href="../styles.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/internes.css?v=20140119" rel="stylesheet" type="text/css" media="all"/>
+    
+	<link media="screen" rel="stylesheet" href="../example1/colorbox.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="../js/jquery.colorbox.js"></script>
+    
+	<script>
+		$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			$(".group1").colorbox({rel:'group1'});
+			$(".group2").colorbox({rel:'group2', transition:"fade"});
+			$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+			$(".group4").colorbox({rel:'group4', slideshow:true});
+			$(".ajax").colorbox();
+			$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+			$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+			$(".inline").colorbox({inline:true, width:"50%"});
+			$(".callbacks").colorbox({
+				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+			});
+			
+			//Example of preserving a JavaScript event for inline calls.
+			$("#click").click(function(){ 
+				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+				return false;
+			});
+		});
+	</script>
+    
+</head>
+
+<body class="interne">
+
+
+<!--    --------------   HEADER MENU   ---------------------    -->
+
+<div id="ie"></div>
+    
+	<div id="header">
+    	<div class="m-content">
+        	<div class="m-content_header clearfix">
+          		   <h1 id="home">
+                   		<a href="../index.html" >
+                        	<img src="images/logo.png" width="38" height="42" alt="webdesigner et solutions artistiques digitales"></a>
+                   </h1>
+                   <nav id="m-top_nav">
+                       <ul>
+                             <li class="nav-main goslide"><a href="../index.html#jms-slideshow"><img src="../images/icones/picto-1.png" />Actus</a></li>
+                             <li class="nav-main main"><a href="../index.html#main"><img src="../images/icones/picto-2.png" />Réalisations</a></li>
+                             <li class="nav-main main"><a href="../profil.html"><img src="../images/icones/picto-3.png" />Profil</a></li>
+                             <li class="nav-main cv"><a class="m-btn m-btn_red" href="cv.pdf" target="_blank">Voir le cv</a></li>
+                      </ul>
+    			   </nav>
+            <!--div id="logos">
+                 <div id="VD"><a href="http://fr.viadeo.com/fr/profile/emilie.hivert" alt="mon viadeo" target="_blank"></a></div>
+                 <div id="Linkedin"><a href="http://lnkd.in/dZv6nyf" alt="mon linkedin" target="_blank"></a></div>
+                 </div-->
+			</div>
+           </div>
+    </div>
+      
+<!--  ---------------------   WORKS   ---------------------  -->
+    
+<div class="maininterne">
+     <div class="m-content">
+        <div id="apercu" class="clearfix" style="min-height:600px;">
+               <h2>PROCHAI<strong>NEMENT</strong></h2>
+            	<img class="motif" src="images/motif.png"/>
+           
+            </div>
+        </div>
+     
+</div>
+    
+
+  
+    
+<!--  ---------------------   FOOTER   ---------------------  -->
+    
+    
+   <div id="footer"> <div class="m-content"><p> l 	Emilie Hivert - web designer  et solutions artistique	 l</p></div> </div>
+ 
+  
+  
+        
+        
+</body>
+
+
+</html>
