@@ -3,20 +3,13 @@
 	src:url(fonts/BirchStd.otf);
 	
 	}
-	
-	
 
+	
 #jms-slideshow {
 	position: relative;
-	width: 80%;
-	max-width: 1400px;
-	min-width: 640px;
-	margin:80px auto 0;
-	height: 460px;
+	width:100%;
+	background-color:black;
 	padding-top:123px;
-	padding-bottom:255px;
-	display:block;
-	/*border-top: #474442 solid 1px;*/
 }
 
 .jms-wrapper {
@@ -250,4 +243,10 @@ a.jms-link{
 .jms-wrapper.not-supported .step:not(.active) a.jms-link{
 	opacity: 1;
 	margin-top: 40px;
+}
+
+
+@media screen and (max-width:500px){
+	.step img{max-width:100%;}
+	#jms-slideshow{padding-top:0px;}
 }

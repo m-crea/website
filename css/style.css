@@ -294,10 +294,11 @@ button.gamma-btn-sspause:before {
 }
 
 @media screen and (max-width: 500px) {
-
+	
 	.gamma-buttons {
 		float: left;
 		clear: both;
 	}
-
+	
 }
+

@@ -2,7 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="57x57" href="icones/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icones/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icones/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icones/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icones/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icones/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icones/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icones/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icones/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icones/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icones/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title> M, Webdesign et Solutions artistiques </title>
     <link href="styles.css?v=20140119" rel="stylesheet" type="text/css" media="all"/>
@@ -41,21 +58,24 @@
 	<div id="ie"></div>
     
 	<div id="header">
-        <div id="content-header">
-        
-            
-          <a href="#global" id="home"><img src="images/logo.png" width="38" height="42" ></a>
-          
-           <ul>
-                 <li class="goslide"><a href="#jms-slideshow"><img src="images/icones/picto-1.png" />Actus</a></li>
-                 <li class="main"><a href="#bulle"><img src="images/icones/picto-2.png" />Réalisations</a></li>
-            	 <li class="main"><a href="profil.html"><img src="images/icones/picto-3.png" />Profil</a></li>
-             	 <li class="cv"><a href="cv.pdf" target="_blank"><img src="images/download.png" width="125" height="38" /></a></li>
-          </ul>
-    		
-            <div id="logos">
+        <div class="m-content">
+        	<div class="m-content_header clearfix">
+          		   <h1 id="home">
+                   		<a href="#global">
+                        	<img src="images/logo.png" width="38" height="42" alt="webdesigner et solutions artistiques digitales" ></a>
+                   </h1>
+                   <nav id="m-top_nav">
+                       <ul>
+                             <li class="nav-main goslide"><a href="#jms-slideshow"><img src="images/icones/picto-1.png" />Actus</a></li>
+                             <li class="nav-main main"><a href="#main"><img src="images/icones/picto-2.png" />Réalisations</a></li>
+                             <li class="nav-main main"><a href="profil.html"><img src="images/icones/picto-3.png" />Profil</a></li>
+                             <li class="nav-main cv"><a href="cv.pdf" class="m-btn m-btn_red" target="_blank">Voir le cv</a></li>
+                      </ul>
+    			   </nav>
+            <!--div id="logos">
                  <div id="VD"><a href="http://fr.viadeo.com/fr/profile/emilie.hivert" alt="mon viadeo" target="_blank"></a></div>
                  <div id="Linkedin"><a href="http://lnkd.in/dZv6nyf" alt="mon linkedin" target="_blank"></a></div>
+                 </div-->
 			</div>
             
         </div>
@@ -69,24 +89,24 @@
     
     	
    		 <!--  ---------------------   BANNIERE TOP DIRECTRICE ARTISTIQUE   ---------------------  -->
-         
-    <div id="top">
-        	<ul class="top">
-                <li class="enhaut"><a href="cv.pdf" target="blank"></a></li>
-                <li class="au_centre"><a href="#bulle"></a></li>
-        	</ul>
-            
-            <ul class="menu-vertical">
-                <li class="actif-"><a href="#webdesign">Web & App</a></li>
-                <li class="Survol-Video"><a href="#video">Anim'</a></li>
-                <li class="Survol-Print"><a href="#print">Design</a></li>
-                <!--<li class="Survol-Web"><a href="#webdesign">Mobile</a></li>-->
-            </ul>
-            
-            <!--<div id="arrow"><a href="#bulle"></a></div>-->
-          
-        </div>  
-          
+    <div class="m-content">
+        <div id="top">
+                <ul class="top clearfix">
+                    <li class="enhaut"><a href="cv.pdf" target="blank"></a></li>
+                    <li class="au_centre"><a href="#bulle"></a></li>
+                </ul>
+                
+                <ul class="menu-vertical">
+                    <li class="actif-"><a href="#webdesign_jms">Web & App</a></li>
+                    <li class="Survol-Video"><a href="#video">Anim'</a></li>
+                    <li class="Survol-Print"><a href="#print">Design</a></li>
+                    <!--<li class="Survol-Web"><a href="#webdesign">Mobile</a></li>-->
+                </ul>
+                
+                <!--<div id="arrow"><a href="#bulle"></a></div>-->
+              
+            </div>  
+         </div>
             
     </div>
 
@@ -120,7 +140,7 @@
 		<img src="images/slide2_.png"/>
 	</div> -->
     
-    <div class="step" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
+    <div class="step" id="webdesign_jms" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
 					<div class="jms-content">
 						<h3></h3>
 						<p></p>
@@ -133,162 +153,124 @@
 </div> 
 
 
-<!-- <div id="arrow_dark"><a href="#bulle"><img src="images/arrow_dark.png" width="91" height="80"/></a></div>  -->
-
-
-
-
-
     
 <!--  ---------------------   WORKS   ---------------------  -->
     
 <div id="main">
-   	
+   	<div class="m-content">
         <div id="bulle">    
         
         </div>
         
         <img src="images/accompagnement.png" width="" height=""/>
         
-    	<div id="webdesign" class="works"><p> <em> WEB</em></p>
-        <ul class="works">
+    	<div id="webdesign" class="works"><p></p>
+        <ul class="works clearfix">
             <li class="SNCF"><a href="Works/SNCF.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Maquettes </span>
-                </div> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Maquettes <br />Webdesign, ergonomie, B2B</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Webdesign, ergonomie, B2B </a></span>
-				</div></li>
+			</li>
             
-            <li class="Orange"><a href="Works/Orange.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Maquettes et prod. </span>
-                </div> 
+            <li class="Orange">
+            	<a href="Works/Orange.html"> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Maquettes et prod.<br />Webdesign, ergonomie, B2B</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Webdesign, ergonomie, B2B, HTML/CSS </a></span>
-				</div></li>
+            </li>
              
              <li class="SRP">
                 <a href="Works/SRP.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Site web e-commerce et vitrine</span>
-                </div> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Site web e-commerce et vitrine<br />Webdesign, html/CSS</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#">Design, HTML/CSS </a></span>
-				</div>
              </li>
              
              <li class="Permisapoints">
                 <a href="Works/pap.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Site web e-commerce</span>
-                </div> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Site web e-commerce<br />Webdesign, html/CSS, test AB</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#">Design, HTML/CSS, test AB </a></span>
-				</div>
              </li>
-        </ul>
-        
-        
-    	<ul class="works">
                 
-            <li class="tam-place"><a href="Works/TamPlace.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text"> Maquettes, intégration </span>
-                </div> 
+            <li class="tam-place">
+            	<a href="Works/TamPlace.html"> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text"> Maquettes, intégration<br />Webdesign, ergonomie, réseau pro</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Webdesign, ergonomie, réseau pro</a></span>
-				</div></li>
+                </li>
              
-            <li class="social-lead"><a href="Works/Social-Lead.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Social Lead</span>
-                </div> 
+            <li class="social-lead">
+            	<a href="Works/Social-Lead.html"> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Social Lead<br /> Outil Viadeo, HTML/CSS</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Outil Viadeo, HTML/CSS </a></span>
-				</div></li>
+            </li>
 			
-            <li class="Dior"><a href="Works/Dior.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Mini site événementiel </span>
-                </div> 
-                </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Projet personnel, Flash </a></span>
-				</div></li>
+            <li class="Dior">
+            	<a href="Works/Dior.html"> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Mini site événementiel <br />Projet personnel, Flash</span>
+                    </div>
+               </a>
+            </li>
             
-            <li class="FNTC"><a href="Works/FNTC.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text"> Rénovation de site </span>
-                </div> 
+            <li class="FNTC">
+            	<a href="Works/FNTC.html"> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text"> Rénovation de site <br /> Webdesign, ergonomie</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Webdesign, ergonomie</a></span>
-				</div></li>
-                
-        </ul>
-
-		
-    	<ul class="works">
+            </li>
             
             <li class="loud-festival">
                 <a href="Works/LoudFestival.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Chartes, intégration </span>
-                </div> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Chartes, intégration <br />Projet personnel, HTML/CSS</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Projet personnel, HTML/CSS </a></span>
-				</div>
              </li>
              
         	<li class="galeries-lafayette">
                 <a href="Works/GaleriesLafayette.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Maquettes</span>
-                </div> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Maquettes<br />Projet personnel, ergonomie</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Projet personnel, ergonomie </a></span>
-				</div>
              </li>
 
-            <li class="smart"><a href="Works/SmartEcologie.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Maquettes</span>
-                </div> 
+            <li class="smart">
+            	<a href="Works/SmartEcologie.html"> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Maquettes<br />Projet personnel, ergonomie</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Projet personnel, ergonomie </a></span>
-				</div></li>
+            </li>
             
             <li class="template-tree">
                 <a href="Works/Template.html"> 
-                <div class="image"></div>
-                <div class="title">
-                    <span class="text">Template</span>
-                </div> 
+                    <div class="image"></div>
+                    <div class="title">
+                        <span class="text">Template<br />Projet personnel, HTML/CSS</span>
+                    </div>
                 </a>
-				<div class="tag">
-				<span class="text"><a href"#"> Projet personnel, HTML/CSS </a></span>
-				</div>
              </li>
              
          
@@ -297,86 +279,75 @@
       </div>  
 		
   
-    	<div id="print"><p><em>Design</em></p>
-			<ul class="works">
+    	<div id="print"><p>Design</p>
+			<ul class="works clearfix">
                 <li class="imagina">
                     <a href="Works/Imagina.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Cartons d'invitation, presse </span>
-                    </div> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Cartons d'invitation, presse<br />Communication visuelle</span>
+                         </div> 
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Communication visuelle</a></span>
-                    </div>
                  </li>
                  
-                <li class="UTLS"><a href="Works/UTLS.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Campagne pub</span>
-                    </div> 
+                <li class="UTLS">
+                	<a href="Works/UTLS.html"> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Campagne pub<br />Affiche 4x3</span>
+                        </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Affiche 4x3 </a></span>
-                    </div></li>
+                </li>
                 
-                <li class="label-ECM"><a href="Works/Label-ECM.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Design urbain</span>
-                    </div> 
-                    </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Pochette CD </a></span>
-                    </div></li>
+                <li class="label-ECM">
+                	<a href="Works/Label-ECM.html"> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Design urbain<br />Pochette CD </span>
+                        </div>
+                   </a>
+                </li>
                 
-                <li class="agenda"><a href="Works/Agenda.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Agenda mode</span>
-                    </div> 
+                <li class="agenda">
+                	<a href="Works/Agenda.html"> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Agenda mode<br />Illustrations, design d'objet</span>
+                        </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Illustrations, design d'objet </a></span>
-                    </div></li>
+                </li>
             </ul>
             
             
             
             
-            <ul class="works">
+            <ul class="works clearfix">
                 <li class="ajax">
                     <a href="Works/Ajax.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Graphisme 60s</span>
-                    </div> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Graphisme 60s<br />Affiche, vectoriel, print</span>
+                        </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Affiche, vectoriel, print</a></span>
-                    </div>
                  </li>
                 
-                <li class="footwear"><a href="Works/footwear.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Chaussure & Mode</span>
-                    </div> 
+                <li class="footwear">
+                	<a href="Works/footwear.html"> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Chaussure & Mode<br />Design d'objet, com', illustrations</span>
+                        </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Design d'objet, com', illustrations</a></span>
-                    </div></li>
+                </li>
                 
-                <li class="Design-book"><a href="Works/DesignBook.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Design Book & Benchmark</span>
-                    </div> 
+                <li class="Design-book">
+                	<a href="Works/DesignBook.html"> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Design Book & Benchmark<br />Charte, marketing, Print</span>
+                        </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Charte, marketing, Print </a></span>
-                    </div></li>
+                 </li>
                 
                 <!--<li><a href="#"> 
                     <div class="image16"></div>
@@ -391,57 +362,50 @@
         	</ul>
         </div>
         
-        <div id="video"><p><em> ANIMATION</em></p>
-			<ul class="works">
+        <div id="video"><p>Animations</p>
+			<ul class="works clearfix">
                 <li class="spot-tam-place">
                     <a href="Works/Spot-TamPlace.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Spot publicitaire</span>
-                    </div> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Spot publicitaire<br />Réseau pro, B2B</span>
+                        </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Réseau pro, B2B </a></span>
-                    </div>
                  </li>
                  
     
-                <li class="text-mining"><a href="Works/Text-mining.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Présentation et offre de service </span>
-                    </div> 
+                <li class="text-mining">
+                	<a href="Works/Text-mining.html"> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Présentation et offre de service <br />Vidéo, B2B</span>
+                        </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#">Vidéo, B2B </a></span>
-                    </div></li>
+                </li>
                     
                     
-                <li class="x-games"><a href="Works/X-Games.html"> 
-                    <div class="image"></div>
-                    <div class="title">
-                        <span class="text">Spot X-games</span>
-                    </div> 
+                <li class="x-games">
+                	<a href="Works/X-Games.html"> 
+                        <div class="image"></div>
+                        <div class="title">
+                            <span class="text">Spot X-games<br /> Vidéo pub, montage, événement </span>
+                        </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Vidéo pub, montage, événement  </a></span>
-                    </div></li>
+                 </li>
                     
                     
                 <li class="logo-effects"><a href="Works/Logo-TamPlace.html"> 
                     <div class="image"></div>
                     <div class="title">
-                        <span class="text">Logo 3D</span>
-                    </div> 
+                        <span class="text">Logo 3D<br />Annonce 3D </span>
+                    </div>
                     </a>
-                    <div class="tag">
-                    <span class="text"><a href"#"> Annonce 3D </a></span>
-                    </div></li>
+                </li>
             
         	</ul>
         </div>
         
-        
+    </div>
         
 </div>
     
@@ -449,7 +413,11 @@
 <!--  ---------------------   FOOTER   ---------------------  -->
     
     
-   <div id="footer"> <div id="text_"> l 	Emilie Hivert 2012	   l </div> </div>
+   <div id="footer"> 
+   		<div class="m-content">
+   			<p> l 	Emilie Hivert - web designer  et solutions artistique	 l</p> 
+        </div>
+   </div>
   
 
     

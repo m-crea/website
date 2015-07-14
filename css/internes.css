@@ -3,37 +3,13 @@
 /*a:link, a:visited{text-decoration:none;}*/
 
 	
-	
-#apercu, #apercu_profil{
-	width:930px;
-	min-height:400px;
-	background-color:white;
-	display:inline-block;
-	}
-
-
-	
-#apercu_profil{
-	margin-top:30px;
-	}
-
-
-.interne{
-	background-image:url(../imgs/tranche_bginterne.jpg);
-	background-repeat:repeat-x;
-
-	}
-
-.text{
-	width:200px;
-	padding-left:10px;
-	display:inline-block;
-	right:0;
+.descr{
+	width:40%;
+	float:left;
 	font-family:Times "Times New Roman", Times, serif;
-	letter-spacing:0.3px;
-	font-size: 12px;
-	vertical-align:top;
 	color:#333;
+	margin-left: 2em;
+	margin-top:30px;
 	}
 
 #apercu .text a.lienweb,#apercu .text .download-pdf{height: 15px;
@@ -55,9 +31,7 @@ text-align:center;}
 	}
 
 .icones_bis{
-	display:inline-block;
-	width:65px;
-	height:80px;
+	float:left;
 	
 	}
 .icones_ul{
@@ -70,35 +44,56 @@ text-align:center;}
 
 .text a:hover{color:#555;}
 
-/*.lienweb:hover{
-	color:#ff3030;
-	}*/
+#apercu{width:100%;height:auto;}
+
+#apercu #diapo{
+	width:55%;
+	float:left;
+	margin-top:20px;
+	}
+
+#apercu #diapo.isImagina{
+	width:45%;
+	}
+	
+#apercu #diapo img{
+	border:1px solid transparent}
+
+#apercu #diapo.isImagina img{width:110%;}
+
+#apercu #diapo img:hover{
+	border:1px solid #33ffcc;
+	}
 
 #apercu h2{
-	font-size:20px;
-	margin-left:40px;
+	font-size:3em;
 	font-weight:normal;
 	text-transform: uppercase;
 	}
 
 	
 .motif{
-	margin-left:40px;
 	display:block;
 }
-	
-.Loud{
-	left:0;
-	display:inline-block;
-	width:622px;
+
+.m-real_content{
+	padding:0px;
 	}
 	
-.Loud li{
-	display:inline-block;
-	text-decoration:none;
+.loud{
+	width:100%;
+	margin:0 auto;
+	padding:0 3.5em;
+	}
+	
+.loud .pres{
+	float:left;
+	width:37%;
 	}
 
-.Loud  a li img {
+.pres.text{width:15%;}
+
+.loud  a li img {
 
 	opacity:0.7;
 	margin: 0 0 15px 0;
@@ -110,7 +105,7 @@ text-align:center;}
 	cursor:url(../images/cursor-zoom.png),pointer;
 }
 
-.Loud a li img{
+.loud a li img{
 	-webkit-transition: outline .4s ease-in;
     -moz-transition: outline .4s ease-in;
     -o-transition: outline .4s ease-in;
@@ -122,24 +117,24 @@ text-align:center;}
 	
 	}
 
-.Loud a:hover li img{
+.loud a:hover li img{
 	outline: 2px solid #33ffcc;
 	opacity:1;
 	
 }
 
-
-.RETOUR{
-	width:28%;
-	height: 15px;
-	display: block;
-	background-color:#66ff99;
+.return{
 	margin-top:30px;
-	padding: 3px 10px;
-	border-radius: 4px;
-	text-align:center;}
-	
-
-.text .RETOUR:hover{
-	background: #ccc;
 	}
+
+
+@media screen and (max-width:730px){
+	#apercu #diapo,.descr,#apercu #diapo.isImagina{width:100%;}
+	.maininterne .motif,.descr{margin:0px;}
+	#apercu .descr p,.m-btn_wrapper{width:50%;float:left;}
+	}
+
+@media screen and (max-width:500px){
+	.maininterne{padding-top:60px;}
+	#apercu .descr p,.m-btn_wrapper{width:100%;clear:both;}
+}

@@ -1,19 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+.clearfix:after {
+  content: "";
+  display:inline-table;
+  height:1%;
+  display:block;
+  clear: both;}
+ 
+ 
+#apercu, #apercu_profil{
+	min-height:400px;
+	background-color:white;
+	}
+	
+#apercu_profil{
+	margin-top:30px;
+	}
+
+
 .icones_bis{
 	padding-right:20px;
 	text-align:center;
-	
+	width: 24%;
+  	min-height: 100px;
 	}
-
-li.icones_bis img{
-	width:53px;
-	height:53px;
-	margin:0 auto;
 	
-	}
-
 .text{
 	/*margin-top:10px;*/
 	}
@@ -23,22 +36,12 @@ li.icones_bis img{
 	padding-top:5px;
 	}
 	
-.pres{
-	width:260px;
-	padding-left:10px;
-	display:inline-block;
-	right:0;
-	font-size: 12px;
-	vertical-align:top;
-	}
-
 
 .pres a{
 	font-weight:lighter;
 	text-transform:none;
-	letter-spacing:0.1px;
+	letter-spacing:0px;
 	color: black;
-	text-decoration: underline;
 	}
 
 .pres a:hover{
@@ -47,33 +50,28 @@ li.icones_bis img{
 	}
 
 #apercu_profil h2{
-	font-size:20px;
+	font-size:1.6em;
 	margin-left:40px;
 	font-weight:normal;
 	text-transform:none;
+	color: rgb(69, 69, 69);
 	}
 
 #apercu_profil .motif{
 	padding-bottom:10px;	
 	}
 
-.info{
-	width:930px;
-	background-color:transparent;
-	min-height:400px;
-	}
+.info{margin-top:20px;}
 
 .tools{
-	vertical-align:top;
-	display:inline-block;
-	width:250px;
-	margin-left:44px;
-	padding-top:80px;
+	float:left;
+	width:33%;
+	margin:0px;
+	text-align:center;
 	color:#6b6b68;
-	font-family: 'Calibri';
-	
-	
 	}
+
+.tools p,.tools h3{padding:0px 0.5em;}
 
 .title{
 	font-size:20px;
@@ -83,20 +81,26 @@ li.icones_bis img{
 	margin-top:10px;
 	}
 	
-.dev,.lieu {
-	font-size:16px;
-	opacity:0.8;
-	margin-top:10px;
-	}
-	
-.lieu{
-	text-align:center;
-	
-	}
 
 .legende{
 	text-align:center;
 	font-size:12px;
 	color:#6b6b68;
 	opacity:0.8;
+	}
+
+@media screen and (max-width:800px){
+	.loud .pres{width:65%;margin:10px;}
+	.pres.icones{display:none;}
+	.pres.text{width:14%;margin:10Px;}
+	#apercu_profil{min-height:300px;}
+	}
+
+@media screen and (max-width:400px){
+	.tools{text-align:left;}
+	#apercu_profil{margin:10px;}
+	.motif{margin:1em 0px;}
+	.loud .pres.text{width:24%;}
+	.loud .pres{margin:0px;padding-right:10px;width:70%;}
+	#apercu_profil h2,.loud{margin:0px;padding:0px;}
 	}
