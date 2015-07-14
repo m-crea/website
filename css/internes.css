@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* CSS Document */
+/*a:link, a:visited{text-decoration:none;}*/
+
+	
+	
+#apercu, #apercu_profil{
+	width:930px;
+	min-height:400px;
+	background-color:white;
+	display:inline-block;
+	}
+
+
+	
+#apercu_profil{
+	margin-top:30px;
+	}
+
+
+.interne{
+	background-image:url(../imgs/tranche_bginterne.jpg);
+	background-repeat:repeat-x;
+
+	}
+
+.text{
+	width:200px;
+	padding-left:10px;
+	display:inline-block;
+	right:0;
+	font-family:Times "Times New Roman", Times, serif;
+	letter-spacing:0.3px;
+	font-size: 12px;
+	vertical-align:top;
+	color:#333;
+	}
+
+#apercu .text a.lienweb,#apercu .text .download-pdf{height: 15px;
+display: block;
+background-color:#66ff99;
+margin: 0px;
+padding: 3px 10px;
+border-radius: 4px;
+text-align:center;}
+
+#apercu .text a.lienweb{width:28%;}
+
+#apercu .text a.lienweb.demo{width:71%;}
+
+#apercu .text a.lienweb:hover{background-color: rgb(215, 225, 235);}
+
+.icones{
+	display:inline-block;
+	}
+
+.icones_bis{
+	display:inline-block;
+	width:65px;
+	height:80px;
+	
+	}
+.icones_ul{
+	display:block;
+	}
+
+.text a, .text_Dior a{
+	color:black;
+	}
+
+.text a:hover{color:#555;}
+
+/*.lienweb:hover{
+	color:#ff3030;
+	}*/
+
+#apercu h2{
+	font-size:20px;
+	margin-left:40px;
+	font-weight:normal;
+	text-transform: uppercase;
+	}
+
+	
+.motif{
+	margin-left:40px;
+	display:block;
+}
+	
+.Loud{
+	left:0;
+	display:inline-block;
+	width:622px;
+	}
+	
+.Loud li{
+	display:inline-block;
+	text-decoration:none;
+	}
+
+.Loud  a li img {
+
+	opacity:0.7;
+	margin: 0 0 15px 0;
+	outline-offset: 1px;
+	position: relative;
+	width:622px;
+	outline: none;
+	z-index: 2;
+	cursor:url(../images/cursor-zoom.png),pointer;
+}
+
+.Loud a li img{
+	-webkit-transition: outline .4s ease-in;
+    -moz-transition: outline .4s ease-in;
+    -o-transition: outline .4s ease-in;
+    transition: outline .4s ease-in;
+	-webkit-transition: opacity .4s ease-in;
+    -moz-transition: opacity .4s ease-in;
+    -o-transition: opacity .4s ease-in;
+    transition: opacity .4s ease-in;
+	
+	}
+
+.Loud a:hover li img{
+	outline: 2px solid #33ffcc;
+	opacity:1;
+	
+}
+
+
+.RETOUR{
+	width:28%;
+	height: 15px;
+	display: block;
+	background-color:#66ff99;
+	margin-top:30px;
+	padding: 3px 10px;
+	border-radius: 4px;
+	text-align:center;}
+	
+
+.text .RETOUR:hover{
+	background: #ccc;
+	}

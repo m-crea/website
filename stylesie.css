@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{font-family:Arial, Helvetica, sans-serif;}
+
+#jms-slideshow.jms-slideshow {
+	display:none;
+	/*border-top: #474442 solid 1px;*/
+}
+
+#logos{float:right;
+	margin-left:130px;}
+
+#header #content-header .main a, .goslide a{cursor:pointer;} 
+
+#header{
+width:auto !important;
+width:1265px;}
+
+
+.works li{
+	zoom: 1; /*offre le layout à un élément (*)*/
+   	display: inline;  }
+	
+
+a{color:black; }
+
+
+
+ #header{width:1265px;
+	width:expression(document.body.clientWidth >= 1265? "1700px": "auto" );}
+    #ie{
+	background:url(images/waiting-page.jpg) no-repeat;
+	width:1000px;
+	height:846px;
+	margin:10px auto;
+	}
+	#header,#global,#jms-slideshow.jms-slideshow,#main{display:none;}
+    </style>

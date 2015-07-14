@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> M, Webdesign et solutions artistiques </title>
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/internes.css?v=20140119" rel="stylesheet" type="text/css" media="all"/>
+     <link href="css/profil.css?v=20140119" rel="stylesheet" type="text/css" media="all"/>
+    
+	<link media="screen" rel="stylesheet" href="example1/colorbox.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/jquery.colorbox.js"></script>
+    
+	<script>
+		$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			$(".group1").colorbox({rel:'group1'});
+			$(".group2").colorbox({rel:'group2', transition:"fade"});
+			$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+			$(".group4").colorbox({rel:'group4', slideshow:true});
+			$(".ajax").colorbox();
+			$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+			$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+			$(".inline").colorbox({inline:true, width:"50%"});
+			$(".callbacks").colorbox({
+				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+			});
+			
+			//Example of preserving a JavaScript event for inline calls.
+			$("#click").click(function(){ 
+				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+				return false;
+			});
+		});
+	</script>
+    
+</head>
+
+<body class="interne">
+
+
+<!--    --------------   HEADER MENU   ---------------------    -->
+	<div id="ie"></div>
+    
+	<div id="header">
+        <div id="content-header">
+        
+            
+          <a href="index.html" id="home"><img src="images/logo.png" width="38" height="42" ></a>
+          
+           <ul>
+                 <li class="goslide"><a href="index.html#jms-slideshow"><img src="images/icones/picto-1.png" />Actus</a></li>
+                 <li class="main"><a href="index.html#bulle"><img src="images/icones/picto-2.png" />Réalisations</a></li>
+            	 <li class="main"><a href="profil.html"><img src="images/icones/picto-3.png" />Profil</a></li>
+                <!-- <li class="main"><a href="mailto:em.hivert@gmail.com"><img src="images/icones/picto-4.png" />Contact</a></li>
+                <!-- <li class="cv"><a href="cv.pdf" target="blank"></a></li> -->
+             	 <li class="cv"><a href="cv.pdf"><img src="images/download.png" width="125" height="38" /></a></li>
+          </ul>
+    		
+            <div id="logos">
+				
+				<div id="VD"><a href="http://www.facebook.com/em.hivert" target="_blank" alt="mon facebook"></a></div>
+                 <div id="FB"><a href="http://fr.viadeo.com/fr/profile/emilie.hivert" target="_blank" alt="mon viadeo"></a></div>
+			</div>
+            
+        </div>
+    </div>
+    
+    <!--  ---------------------  GLOBAL = 1ere partie top   ---------------------  -->
+    
+       <!--<div id="global">
+    
+    
+    	
+   		  ---------------------   BANNIERE TOP DIRECTRICE ARTISTIQUE   ---------------------  
+         
+  <div id="top">
+        	<ul class="top">
+            <li><a href="#"><img src="../imgs/btn_cv.png" width="225" height="105" alt="voir mon cv"/></a></li>
+            <li class="au_centre"><a href="#"><img src="../imgs/MyLogo.png" width="90" height="91" alt="M Art & Design"/></a></li>
+        	</ul>
+            
+           <div id="arrow"> <a href="#"><img src="../imgs/MainArrow.png" width="74" height="58"/></a></div>
+          
+        </div>   
+          
+            
+    </div>-->
+
+
+
+
+
+
+<!--  ---------------------   SLIDER   ---------------------  -->
+
+
+
+
+
+    
+<!--  ---------------------   PROFIL   ---------------------  -->
+    
+<div id="main_profil" >
+   	
+       
+        
+        <img src="images/top_profil.png" width="947" height="350"/>
+        
+         <div id="bulle_profil">    
+        
+        </div>
+        
+        <div id="apercu_profil">
+               <h2> <em> "Ne suivez pas la tendance, <strongs> devancez la "</strong></em> </h2>
+            
+            <img class="motif" src="images/motif_profil.png" width="562" height="9" />
+            
+           
+            
+            
+            <ul class="Loud">
+                <li class="pres"> </br> <strong> De formation communication visuelle et artistique, </strong> j'ai souhaité poursuivre en me spécialisant dans le domaine du web. </br> </br> Très rapidement, ce domaine interactif est devenu pour moi une véritable passion. </br> </br>  Ecclectique et toujours à l'écoute des nouvelles tendances, mon objectif est de permettre à mon entreprise et/ou à leurs clients d'être visibles sur la toile web grâce à un design adapté et unique. </br> </br> <a href="mailto:em.hivert@gmail.com"> <strong> Alors, n'hésitez pas à me contacter ! </strong> </a> </li> 
+                <li class="icones"> 
+                
+                <ul class="icones_ul"> <Li class="icones_bis" ><img src="images/icones/mobile.png" /> </br> <div class="legende"> <em> Mobile </em> </div> </Li> <li class="icones_bis"><img src="images/icones/webdesign.png" /> </br> <div class="legende"> <em> Webdesign </em></div> </li> <li class="icones_bis"><img src="images/icones/print.png" /></br> <div class="legende"> <em> Print </em> </div> </li></ul> 
+                <ul class="icones_ul"> <li class="icones_bis" ><img src="images/icones/illustrations.png"/> </br> <div class="legende"> <em> Illustrations </em> </div> </Li> <li class="icones_bis"><img src="images/icones/com.png" /> </br> <div class="legende"> <em> Communication </em></div> </li> <li class="icones_bis"><img src="images/icones/video.png" /></br> <div class="legende"> <em> Vidéo </em> </div></li></ul> 
+                <ul class="icones_ul"> <Li class="icones_bis" ><img src="images/icones/storyboard.png" /> </br> <div class="legende"> <em> Storyboard </em></div> </Li> <li class="icones_bis"><img src="images/icones/ergonomie.png" /> </br> <div class="legende"> <em> Ergonomie </em> </div> </li></ul> 
+               
+                
+                
+                </li>
+            </ul>
+            
+     	     <div class="text"> <img src="images/profilNB.png" width="110" height="148" /> </br> <strong></strong> </br> <a href="cv.pdf" target="blank">  <em> diplômée qualifiée </em> <img src="images/icones/medaillon.png" /> </a> <a href="cv.pdf" target="blank">  <em> Expérience </em> <img src="images/icones/medaillon.png" /> <img src="images/icones/medaillon.png" /> </a> </div>  
+        </div>
+        
+       
+
+		<div class="info"> 
+        
+        	<div class="tools">
+            
+            	<img src="images/motif_2.png" width="248" height="10" />
+                
+               <div class="title"> Tools  </div> 
+               
+               <div class="legende"> Etudiés et pratiqués : </div>
+               
+            	<div class="dev"> Photoshop ------- <img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /></br> Illustrator ------- <img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /> </br> Dreamweaver ------- <img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /> </br> Notepad ++, Sublime txt 2  <img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillonNB.png" /><img src="images/icones/medaillonNB.png" /></br> Flash ------- <img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillonNB.png" /></br> After effects, Premiere pro <img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillonNB.png" /> </br> PHP (notions) ------- <img src="images/icones/medaillon.png" /><img src="images/icones/medaillon.png" /><img src="images/icones/medaillonNB.png" /><img src="images/icones/medaillonNB.png" /><img src="images/icones/medaillonNB.png" /> </div>
+            
+            </div>
+        
+        	<div class="tools">
+            
+            	<img src="images/motif_2.png" width="248" height="10" />
+               <div class="title"> Derniers postes  </div> 
+               <div class="legende"> ~ </div>
+            	<div class="dev"> Webdesigner, UX --------- <em>Depuis 2012 </em> </br> Responsable jr créa web ----- <em> Fin 2011</em> </br> Créa Webdesigner -------- <em> 2010 - 2011 </em> </br> Graphiste créa ------------ <em> 2008 / 2010</em></div>
+            
+            </div>
+            
+            <div class="tools">
+            
+            	<img src="images/motif_2.png" width="248" height="10" />
+                <div class="title"> Contact  </div> 
+                <div class="legende"> ~ </div>
+            	<div class="lieu"> <em> Bois Colombes, 92270  </br> em.hivert@gmail.com </br> </em></div>
+            </div>
+            
+        
+        </div>
+        
+</div>
+    
+
+  
+    
+<!--  ---------------------   FOOTER   ---------------------  -->
+    
+    
+   <div id="footer"> <div id="text_"> l 	Emilie Hivert 2012	   l </div> </div> 
+  
+  
+        
+        
+</body>
+
+
+</html>

@@ -1,0 +1,55 @@
+#form_extract .spanspecial {
+  width: 170px;
+}
+.modal.recherchegroup {
+  width: 900px;
+  margin-left: -455px;
+}
+
+h1{
+	font-family:Helvetica;
+	font-size:24px;
+	color:#58abcd;
+	
+	}
+
+.wrapper{
+	width:940px;
+	margin:0 auto;
+	display:block;
+	
+	}
+
+.top{
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	margin-bottom: 0;
+	border-bottom:1px solid  #DADADA;
+	padding-bottom: 10px;
+	}
+
+.logo{
+	width:101px;
+	display:inline-block;
+	
+	}
+
+.btn-group pull-right{
+	margin-top:15px;
+	}
+
+
+a.btn-nvelle-vague{
+	width:29px;
+	height:23px;
+	display:inline-block;
+	background:url(../imgs/new-vague-sprite.jpg) no-repeat;
+	background-position: 0 0;
+	margin-left: 168px;
+
+	}
+
+a.btn-nvelle-vague:hover {
+	background-position:0 -23px;
+	}

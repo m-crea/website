@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.icones_bis{
+	padding-right:20px;
+	text-align:center;
+	
+	}
+
+li.icones_bis img{
+	width:53px;
+	height:53px;
+	margin:0 auto;
+	
+	}
+
+.text{
+	/*margin-top:10px;*/
+	}
+
+.text a{
+	display:block;
+	padding-top:5px;
+	}
+	
+.pres{
+	width:260px;
+	padding-left:10px;
+	display:inline-block;
+	right:0;
+	font-size: 12px;
+	vertical-align:top;
+	}
+
+
+.pres a{
+	font-weight:lighter;
+	text-transform:none;
+	letter-spacing:0.1px;
+	color: black;
+	text-decoration: underline;
+	}
+
+.pres a:hover{
+	font-weight:lighter;
+	color:#555;
+	}
+
+#apercu_profil h2{
+	font-size:20px;
+	margin-left:40px;
+	font-weight:normal;
+	text-transform:none;
+	}
+
+#apercu_profil .motif{
+	padding-bottom:10px;	
+	}
+
+.info{
+	width:930px;
+	background-color:transparent;
+	min-height:400px;
+	}
+
+.tools{
+	vertical-align:top;
+	display:inline-block;
+	width:250px;
+	margin-left:44px;
+	padding-top:80px;
+	color:#6b6b68;
+	font-family: 'Calibri';
+	
+	
+	}
+
+.title{
+	font-size:20px;
+	text-transform: capitalize;
+	text-align:center;
+	opacity:0.8;
+	margin-top:10px;
+	}
+	
+.dev,.lieu {
+	font-size:16px;
+	opacity:0.8;
+	margin-top:10px;
+	}
+	
+.lieu{
+	text-align:center;
+	
+	}
+
+.legende{
+	text-align:center;
+	font-size:12px;
+	color:#6b6b68;
+	opacity:0.8;
+	}

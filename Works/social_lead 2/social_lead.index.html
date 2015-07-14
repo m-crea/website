@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <link href="social_lead.index_files/bb5d025_main_1.css" type="text/css" rel="stylesheet" media="screen">
+<link href="social_lead.index_files/bb5d025_main_2.css" type="text/css" rel="stylesheet" media="screen">
+<link href="social_lead.index_files/bb5d025_part_3_jquery-ui-1.css" type="text/css" rel="stylesheet" media="screen">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+    <title>Configurateur campagne viadeo</title>
+    <link rel="shortcut icon" href="http://campagne-viadeo.sf/favicon.ico">
+        <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>
+
+<body data-spy="scroll">
+
+
+    <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#"> Viadeo</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class=""><a href="http://campagne-viadeo.sf/app_dev.php/"><i class="icon-drapeau"><img src="imgs/drapeau.png" width="15" height="15"/></i> Campagnes</a></li>
+          <li><a href="http://campagne-viadeo.sf/app_dev.php/extraction"><i class="icon-search"></i> Extraction</a></li>
+          <li><a href="http://campagne-viadeo.sf/app_dev.php/profils"><i class="icon-user"></i> Comptes viadeo</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
+
+<div class="top">
+	<div class="wrapper">
+        <div class="logo">
+        
+        <a href="#" title="logo-social-lead"> <img src="imgs/logo.png" width="101" height="99"/></a>
+        
+        </div>
+        
+         <div class="btn-group pull-right">
+	<a href="http://campagne-viadeo.sf/app_dev.php/campagne/edit" class="btn launch-modal">Nouvelle campagne</a>
+	<!-- <a href="http://campagne-viadeo.sf/app_dev.php/wave/edit/" class="btn">Créer une vague</a> -->
+</div>
+
+       </div>
+</div>
+        
+        <div class="container">
+                
+        <div class="content">
+        
+        
+        
+        
+        
+            <div class="page-header">
+     
+      <h1>Campagnes</h1>
+</div>
+
+            
+           
+ 
+ 					<div class="row-fluid">
+							<div class="span12">
+                            
+                            	<a href="http://campagne-viadeo.sf/app_dev.php/wave/edit/" class="btn-nvelle-vague"> </a>
+                                
+								<div class="btn-group pull-right">
+								<a class="btn btn-small launch-modal" href="http://campagne-viadeo.sf/app_dev.php/campagne/edit?id=3"><i class="icon-edit"></i> Editer</a>
+								<a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/campagne/delete/3" onclick="return confirm('Suppression de la campagne ?')"><i class="icon-remove"></i> Supprimer</a>
+								</div>
+							</div>
+                  		</div>     
+     				
+                        
+                        
+      <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs">
+                    <li class="active">
+            <a href="#campagne_3" data-toggle="tab">Viadeo campagne</a>
+          </li>
+                  </ul>
+        <div class="tab-content">
+										<div class="tab-pane active" id="campagne_3">
+						
+						
+          				<table class="table table-bordered">
+          					<thead>
+          						<tr>
+          							<th>Nom</th>
+          							<th>Dates</th>
+                        <th>Créneau</th>
+          							<th>Profils</th>
+          							<th>Statut</th>
+          							<th>Actions</th>
+          						</tr>
+          					</thead>
+          					<tbody>
+          					          						<tr>
+          							<td>Relance</td>
+          							<td>08/01/2013 10/01/2013</td>
+                        <td>10:00 21:00</td>
+          							<td>
+                                                    <div><a class="pull-right launch-modal" href="http://campagne-viadeo.sf/app_dev.php/profil/edit?id=1">celine.mounier@gmail.com</a></div>
+                                                    <div><a class="pull-right launch-modal" href="http://campagne-viadeo.sf/app_dev.php/profil/edit?id=7">melanie.cazals@orange.com</a></div>
+                                                  </td>
+          							<td>Terminer</td>
+          							<td>
+          								<div class="btn-group">
+                                                        <a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/1/users"><i class="icon-user"></i></a>
+                                                        <a class="btn btn-small launch-modal" href="http://campagne-viadeo.sf/app_dev.php/wave/import/1"><i class="icon-file"></i></a>
+	          								<a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/edit/?id=1"><i class="icon-edit"></i></a>
+	          								<a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/delete/1" onclick="return confirm('Suppression de la vague ?')"><i class="icon-remove"></i></a>
+          								</div>
+          							</td>
+          						</tr>
+          					          						<tr>
+          							<td>test</td>
+          							<td>23/01/2013 23/01/2013</td>
+                        <td></td>
+          							<td>
+                                                    <div><a class="pull-right launch-modal" href="http://campagne-viadeo.sf/app_dev.php/profil/edit?id=1">celine.mounier@gmail.com</a></div>
+                                                    <div><a class="pull-right launch-modal" href="http://campagne-viadeo.sf/app_dev.php/profil/edit?id=7">melanie.cazals@orange.com</a></div>
+                                                  </td>
+          							<td>Terminer</td>
+          							<td>
+          								<div class="btn-group">
+                                                        <a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/2/users"><i class="icon-user"></i></a>
+                                                        <a class="btn btn-small launch-modal" href="http://campagne-viadeo.sf/app_dev.php/wave/import/2"><i class="icon-file"></i></a>
+	          								<a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/edit/?id=2"><i class="icon-edit"></i></a>
+	          								<a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/delete/2" onclick="return confirm('Suppression de la vague ?')"><i class="icon-remove"></i></a>
+          								</div>
+          							</td>
+          						</tr>
+          					          						<tr>
+          							<td>Relance jeff</td>
+          							<td>28/01/2013 28/02/2013</td>
+                        <td></td>
+          							<td>
+                                                    <div><a class="pull-right launch-modal" href="http://campagne-viadeo.sf/app_dev.php/profil/edit?id=8">jfnawawi@upgeneration.com</a></div>
+                                                  </td>
+          							<td>En cours</td>
+          							<td>
+          								<div class="btn-group">
+                                                        <a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/3/users"><i class="icon-user"></i></a>
+                                                        <a class="btn btn-small launch-modal" href="http://campagne-viadeo.sf/app_dev.php/wave/import/3"><i class="icon-file"></i></a>
+	          								<a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/edit/?id=3"><i class="icon-edit"></i></a>
+	          								<a class="btn btn-small" href="http://campagne-viadeo.sf/app_dev.php/wave/delete/3" onclick="return confirm('Suppression de la vague ?')"><i class="icon-remove"></i></a>
+          								</div>
+          							</td>
+          						</tr>
+          					          					</tbody>
+          				</table>
+                	</div>
+									</div>
+			</div>
+    	</div>
+    </div>
+
+    <div id="modal">
+    	    </div>
+        </div>
+        <footer>
+                    </footer>
+    </div> <!-- /container -->
+        	          <script type="text/javascript" src="social_lead.index_files/efcb11d_jquery.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-transition_2.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-modal_3.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-dropdown_4.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-scrollspy_5.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-tab_6.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-tooltip_7.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-popover_8.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-alert_9.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-button_10.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-collapse_11.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-carousel_12.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_bootstrap-typeahead_13.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_mopabootstrap-collection_14.js"></script>
+<script type="text/javascript" src="social_lead.index_files/efcb11d_mopabootstrap-subnav_15.js"></script>
+
+    <script type="text/javascript" src="social_lead.index_files/bd50ef5_part_1_jquery-ui-1.js"></script>
+    <script type="text/javascript" src="social_lead.index_files/bd50ef5_part_1_jquery-ui-timepicker_2.js"></script>
+    <script type="text/javascript" src="social_lead.index_files/bd50ef5_part_1_main_3.js"></script>
+    <script type="text/javascript" src="social_lead.index_files/bd50ef5_part_2_main_1.js"></script>
+  
+</body></html>

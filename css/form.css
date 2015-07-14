@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:'Calibri';
+	
+	src:url(fonts/calibri.ttf);
+	}
+
+body{font-family:'Calibri';
+font-weight:lighter;}	
+
+table{
+	font-size:14px;
+	}
+
+p{
+	font-size:18px;}
