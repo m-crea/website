@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="57x57" href="../icones/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../icones/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../icones/apple-icon-72x72.png">
@@ -21,41 +22,36 @@
     <meta name="theme-color" content="#ffffff">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title> M, Direction et solutions artistiques </title>
-    <link href="../styles.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/internes.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../styles.css?v=20150119" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/internes.css?v=20150119" rel="stylesheet" type="text/css" media="all"/>
     
-	<link media="screen" rel="stylesheet" href="../example1/colorbox.css" />
+	 <link media="screen" rel="stylesheet" href="../css/zoombox.css?v=20150119" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="../js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="../js/zoombox.js"></script>
     
-	<script>
-		$(document).ready(function(){
-			//Examples of how to assign the ColorBox event to elements
-			$(".group1").colorbox({rel:'group1'});
-			$(".group2").colorbox({rel:'group2', transition:"fade"});
-			$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-			$(".group4").colorbox({rel:'group4', slideshow:true});
-			$(".ajax").colorbox();
-			$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
-			$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
-			$(".inline").colorbox({inline:true, width:"50%"});
-			$(".callbacks").colorbox({
-				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-			});
-			
-			//Example of preserving a JavaScript event for inline calls.
-			$("#click").click(function(){ 
-				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-				return false;
-			});
-		});
-	</script>
+	  <script type="text/javascript">
+        jQuery(function($){
+            $('a.zoombox').zoombox();
+
+            /**
+            * Or You can also use specific options
+            $('a.zoombox').zoombox({
+                theme       : 'zoombox',        //available themes : zoombox,lightbox, prettyphoto, darkprettyphoto, simple
+                opacity     : 0.8,              // Black overlay opacity
+                duration    : 800,              // Animation duration
+                animation   : true,             // Do we have to animate the box ?
+                width       : 600,              // Default width
+                height      : 400,              // Default height
+                gallery     : true,             // Allow gallery thumb view
+                autoplay : false                // Autoplay for video
+            });
+            */
+        });
+        </script>
+    
     
 </head>
+
 
 <body class="interne">
 
@@ -73,9 +69,9 @@
                    </h1>
                    <nav id="m-top_nav">
                        <ul>
-                             <li class="nav-main goslide"><a href="../index.html#jms-slideshow"><img src="../images/icones/picto-1.png" />Actus</a></li>
-                             <li class="nav-main main"><a href="../index.html#main"><img src="../images/icones/picto-2.png" />Réalisations</a></li>
-                             <li class="nav-main main"><a href="../profil.html"><img src="../images/icones/picto-3.png" />Profil</a></li>
+                             <li class="nav-main goslide"><a href="../index.html#jms-slideshow"><img src="../icones/actu.png" />Actus</a></li>
+                             <li class="nav-main main"><a href="../index.html#main"><img src="../icones/m-real.png" />Réalisations</a></li>
+                             <li class="nav-main main"><a href="../profil.html"><img src="../icones/profil.png" />Profil</a></li>
                              <li class="nav-main cv"><a class="m-btn m-btn_red" href="cv.pdf" target="_blank">Voir le cv</a></li>
                       </ul>
     			   </nav>

@@ -16,7 +16,7 @@
 }
 #zoombox .zoombox_container{
 	position:absolute;
-	z-index:100;
+	  z-index: 999;
 }
 #zoombox .relative{
 	position:relative;
@@ -321,7 +321,7 @@
 	background:url(../imgs/ppprev.png) no-repeat left center;
 }
 .simple .zoombox_close{
-	background:url(../imgs/simpleclose2.png) no-repeat;
+	background:url(../icones/close.gif) no-repeat;
 	width:30px;
 	height:30px;
 	position:absolute;

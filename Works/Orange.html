@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="57x57" href="../icones/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../icones/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../icones/apple-icon-72x72.png">
@@ -21,10 +22,10 @@
     <meta name="theme-color" content="#ffffff">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title> M, Direction et solutions artistiques </title>
-    <link href="../styles.css?v=20140119" rel="stylesheet" type="text/css" media="all"/>
-    <link href="../css/internes.css?v=20140119" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../styles.css?v=20150119" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/internes.css?v=20150119" rel="stylesheet" type="text/css" media="all"/>
     
-	 <link media="screen" rel="stylesheet" href="../css/zoombox.css" />
+	 <link media="screen" rel="stylesheet" href="../css/zoombox.css?v=20150119" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/zoombox.js"></script>
     
@@ -67,9 +68,9 @@
                    </h1>
                    <nav id="m-top_nav">
                        <ul>
-                             <li class="nav-main goslide"><a href="../index.html#jms-slideshow"><img src="../images/icones/picto-1.png" />Actus</a></li>
-                             <li class="nav-main main"><a href="../index.html#main"><img src="../images/icones/picto-2.png" />Réalisations</a></li>
-                             <li class="nav-main main"><a href="../profil.html"><img src="../images/icones/picto-3.png" />Profil</a></li>
+                            <li class="nav-main goslide"><a href="../index.html#jms-slideshow"><img src="../icones/actu.png" />Actus</a></li>
+                             <li class="nav-main main"><a href="../index.html#main"><img src="../icones/m-real.png" />Réalisations</a></li>
+                             <li class="nav-main main"><a href="../profil.html"><img src="../icones/profil.png" />Profil</a></li>
                              <li class="nav-main cv"><a class="m-btn m-btn_red" href="cv.pdf" target="_blank">Voir le cv</a></li>
                       </ul>
     			   </nav>
@@ -85,17 +86,21 @@
 <!--  ---------------------   WORKS   ---------------------  -->
     
 <div class="maininterne">
-        
+        <div class="m-content">
         <div id="apercu" class="clearfix">
             <h2>OR<strong>ANGE</strong></h2>
             <img class="motif" src="images/motif.png"/>
             
             <div id="diapo">
                 <ul class="m-real_content">
-                    <a href="http://www.escaledescreateurs.fr/" target="_blank"><li><img src="images/Orange_a.png" /></li></a>			
+                    <a class="zoombox zgallery1" title="" href="images/Orange_a.jpg" onclick="$.zoombox.options.theme = 'simple';" ><li><img src="images/Orange_a.jpg" /></li></a>	
+                    <a class="zoombox zgallery1" title="" href="images/Orange2.jpg" onclick="$.zoombox.options.theme = 'simple';" ><li></li></a>	
+                    <a class="zoombox zgallery1" title="" href="images/Orange3.jpg" onclick="$.zoombox.options.theme = 'simple';" ><li></li></a>	
+                     <a class="zoombox zgallery1" title="" href="images/Orange5.jpg" onclick="$.zoombox.options.theme = 'simple';" ><li></li></a>		
+                     <a class="zoombox zgallery1" title="" href="images/Orange1.jpg" onclick="$.zoombox.options.theme = 'simple';" ><li></li></a>				
                 </ul>
             </div>
-     	     <div class="descr"><p><strong>Réalisation développée pour le client Orange<br />2011</strong><br /><br /><strong> Typologie </strong> </br> Divers maquettes webdesign et Story board </br> </br> <strong> Client </strong> </br> Orange </br> </br> <strong> Mots clé </strong> </br> B2B, ergonomie, </br> webdesign, événementiel, </br> propale </p>
+     	     <div class="descr"><p><strong>Création d'interfaces et charte pour Orange<br />2011</strong><br /><br /><strong> Typologie </strong> </br> Divers maquettes webdesign, pictogrammes, bannières et story board pour vidéo pub</br> </br> <strong> Client </strong> </br> Orange </br> </br> <strong> Mots clé </strong> </br> B2B, ergonomie, </br> webdesign, événementiel, </br> propale <br /><br /><strong>Evolution de la charte de <a href="http://pro.orange.fr/vie-de-pro/" target="_blank">"l'escale des créateurs"</a></strong></p>
              
                  <div class="m-btn_wrapper">
                     <br /><a href="../index.html#main" class="m-btn m-btn_green return"><strong> Retour </strong></a> 
@@ -104,7 +109,7 @@
             
         </div>
         
-
+</div>
         
 </div>
     
@@ -113,7 +118,7 @@
 <!--  ---------------------   FOOTER   ---------------------  -->
     
     
-   <div id="footer"> <div id="text_"> l 	Emilie Hivert - web designer  et solutions artistique	 l</div> </div>
+   <div id="footer"> <div class="m-content"><p> l 	Emilie Hivert - web designer  et solutions artistique	 l</p></div> </div>
   
 
  

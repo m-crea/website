@@ -6,11 +6,12 @@
 .descr{
 	width:40%;
 	float:left;
-	font-family:Times "Times New Roman", Times, serif;
 	color:#333;
 	margin-left: 2em;
 	margin-top:30px;
 	}
+
+.descr strong{font-size:1.2em;}
 
 #apercu .text a.lienweb,#apercu .text .download-pdf{height: 15px;
 display: block;

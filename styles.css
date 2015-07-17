@@ -2,13 +2,13 @@
 /* CSS Document */
 
 @font-face{
-	font-family:'Circular';
-	src:url(fonts/CircularStd-Book.otf);
+	font-family:'Source-sans-pro';
+	src:url(fonts/SourceSansPro-Regular.otf);
 	}
 	
 body{
 	margin:0px;
-	font-family:'Circular';
+	font-family:'Source-sans-pro';
 	font-size: 12px;
 	}
 	
@@ -72,7 +72,7 @@ ul{
 
 
 .main a img,.goslide a img{
-	padding-right:15px;
+	height:22px;
 	}
 	
 a.m-btn{
@@ -93,7 +93,6 @@ a.m-btn{
   	transition: all .25s ease-in-out;
 	padding-right: 3em;
   padding-left: 3em;
-  font-family:'Circular';
 }
 
 .nav-main a.m-btn_red, a.m-btn_red{
@@ -106,8 +105,7 @@ a.m-btn{
 a.m-btn_green{color:black;background-color:#36EDBF;}
 
 .nav-main a{
-	padding-right: 3em;
-  	padding-left: 3em;
+	padding: .59375rem 2.5em;
 	text-align:center;
 	color:rgb(71, 71, 71);
 	transition-delay:0s;
@@ -115,25 +113,15 @@ a.m-btn_green{color:black;background-color:#36EDBF;}
     -moz-transition:all .25s ease-in-out;
     -o-transition:all .25s ease-in-out;
     transition:all .25s ease-in-out;
-	padding-top: .59375rem;
-  	padding-bottom: .59375rem;
 	letter-spacing:0.4px;
 }
 
-.nav-main a:hover{
+.nav-main a:hover{ 
 	color:#de170a;
 	}
 	
 h2{font-size:12px;}
 	
-
-.actif{
-	font-family:'Circular';
-	font-size: 12px;
-	}
-
-
-
 a{text-decoration:none;
 cursor: url(imgs/crosshair.png);}
 
@@ -258,14 +246,6 @@ cursor: url(imgs/crosshair.png);}
 	margin-left:427px;
 	}
 
-
-
-#arrow a:hover{
-	background-image:url(images/MainArrow_red.png);
-	background-repeat:no-repeat;
-	opacity:1;
-	}
-
 #main{padding-top:60px;background-color:#f7f7f7;}
 	
 #main p,#footer p{font-size:1em;letter-spacing: 0.4px;}
@@ -282,12 +262,6 @@ cursor: url(imgs/crosshair.png);}
 
 #main_profil{
 	padding-top:130px;
-	}
-	
-#bulle{
-	background-image:url(images/Bulle_works.png);
-	background-repeat:no-repeat;
-	height:30px;
 	}
 
 #bulle_profil{
@@ -430,13 +404,12 @@ cursor: url(imgs/crosshair.png);}
 	
 @media screen and (max-width:500px){
 	#main_profil{padding-top:70px;}
-	#header{background-color:rgba(255, 255, 255, 1)}
 	#main{padding-top:20px;}
-	.au_centre a{width: 50%;height:70px;}
-	#top{padding-bottom:110px;}
+	.au_centre a{width: 70%;height:170px;}
+	#top{padding-bottom:0px;}
 	.m-content_header.clearfix{padding:0em 0.4em;}
 	#global{margin: 40px auto 0px;}
 	.nav-main a{padding-left:1.2em;padding-right:1.2em;}
 	.nav-main a img,.enhaut a{display:none;}
-	.top .au_centre {margin-left:14em;}
+	.top .au_centre {margin-left:12.5em;}
 	}

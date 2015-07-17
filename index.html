@@ -22,10 +22,11 @@
     <meta name="theme-color" content="#ffffff">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title> M, Webdesign et Solutions artistiques </title>
-    <link href="styles.css?v=20140119" rel="stylesheet" type="text/css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=20140119"/>
-    <link rel="stylesheet" type="text/css" href="css/slider.css?v=20140119" />
-    <link rel="stylesheet" type="text/css" href="css/works.css?v=20140119"/>
+    <link href="styles.css?v=20150715" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=20150119"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css?v=20150119"/>
+    <link rel="stylesheet" type="text/css" href="css/slider.css?v=20150119" />
+    <link rel="stylesheet" type="text/css" href="css/works.css?v=20150715"/>
         
     <!--[if lte IE 9]>
     
@@ -62,14 +63,15 @@
         	<div class="m-content_header clearfix">
           		   <h1 id="home">
                    		<a href="#global">
-                        	<img src="images/logo.png" width="38" height="42" alt="webdesigner et solutions artistiques digitales" ></a>
+                        	<img src="images/logo.png" alt="webdesigner et solutions artistiques digitales" ></a>
                    </h1>
                    <nav id="m-top_nav">
                        <ul>
-                             <li class="nav-main goslide"><a href="#jms-slideshow"><img src="images/icones/picto-1.png" />Actus</a></li>
-                             <li class="nav-main main"><a href="#main"><img src="images/icones/picto-2.png" />Réalisations</a></li>
-                             <li class="nav-main main"><a href="profil.html"><img src="images/icones/picto-3.png" />Profil</a></li>
-                             <li class="nav-main cv"><a href="cv.pdf" class="m-btn m-btn_red" target="_blank">Voir le cv</a></li>
+                             
+                             <li class="nav-main goslide"><a href="#jms-slideshow"><img src="icones/actu.png" alt="actualites et introduction au webdesign" />Actus</a></li>
+                             <li class="nav-main main"><a href="#main"><img src="icones/m-real.png" alt="solutions artistiques digitales, interfaces ui web mobile et design print"/>Réalisations</a></li>
+                             <li class="nav-main main"><a href="profil.html"><img src="icones/profil.png" alt="connaître emilie hivert"/>Profil</a></li>
+                             <li class="nav-main cv"><a href="cv.pdf" class="m-btn m-btn_red" title="télécharger le cv" target="_blank">Voir le cv</a></li>
                       </ul>
     			   </nav>
             <!--div id="logos">
@@ -98,8 +100,8 @@
                 
                 <ul class="menu-vertical">
                     <li class="actif-"><a href="#webdesign_jms">Web & App</a></li>
-                    <li class="Survol-Video"><a href="#video">Anim'</a></li>
                     <li class="Survol-Print"><a href="#print">Design</a></li>
+                    <li class="Survol-Video"><a href="#video">Anim'</a></li>
                     <!--<li class="Survol-Web"><a href="#webdesign">Mobile</a></li>-->
                 </ul>
                 
@@ -158,14 +160,26 @@
     
 <div id="main">
    	<div class="m-content">
-        <div id="bulle">    
+        <img src="images/accompagnement.png"/>
         
-        </div>
-        
-        <img src="images/accompagnement.png" width="" height=""/>
-        
-    	<div id="webdesign" class="works"><p></p>
+    	<div id="webdesign" class="works">
         <ul class="works clearfix">
+        	<li class="works_celio">
+            	<a href="Works/Celio.html"> 
+                    <div class="image works-image_celio"></div>
+                    <div class="title">
+                        <span class="text">Nouvelle charte e-commerce<br />Webdesign, HTML/CSS, B2C, tests AB</span>
+                    </div>
+                </a>
+			</li>
+        	<li class="works_iselection">
+            	<a href="Works/ISelection.html"> 
+                    <div class="image works-image_iselection"></div>
+                    <div class="title">
+                        <span class="text">Responsable de la charte webdesign<br />Webdesign, emailings, HTML/CSS, B2C</span>
+                    </div>
+                </a>
+			</li>
             <li class="SNCF"><a href="Works/SNCF.html"> 
                     <div class="image"></div>
                     <div class="title">
@@ -178,7 +192,7 @@
             	<a href="Works/Orange.html"> 
                     <div class="image"></div>
                     <div class="title">
-                        <span class="text">Maquettes et prod.<br />Webdesign, ergonomie, B2B</span>
+                        <span class="text">Maquettes<br />Webdesign, ergonomie, B2B</span>
                     </div>
                 </a>
             </li>
@@ -187,7 +201,7 @@
                 <a href="Works/SRP.html"> 
                     <div class="image"></div>
                     <div class="title">
-                        <span class="text">Site web e-commerce et vitrine<br />Webdesign, html/CSS</span>
+                        <span class="text">Mise en prod site e-commerce<br />Webdesign, HTML/CSS</span>
                     </div>
                 </a>
              </li>
@@ -196,7 +210,7 @@
                 <a href="Works/pap.html"> 
                     <div class="image"></div>
                     <div class="title">
-                        <span class="text">Site web e-commerce<br />Webdesign, html/CSS, test AB</span>
+                        <span class="text">Optimisation site e-commerce<br />Webdesign, HTML/CSS, test AB</span>
                     </div>
                 </a>
              </li>
@@ -368,7 +382,7 @@
                     <a href="Works/Spot-TamPlace.html"> 
                         <div class="image"></div>
                         <div class="title">
-                            <span class="text">Spot publicitaire<br />Réseau pro, B2B</span>
+                            <span class="text">Pub pour un réseau social professionnel<br />Vidéo, B2B</span>
                         </div>
                     </a>
                  </li>
@@ -378,7 +392,7 @@
                 	<a href="Works/Text-mining.html"> 
                         <div class="image"></div>
                         <div class="title">
-                            <span class="text">Présentation et offre de service <br />Vidéo, B2B</span>
+                            <span class="text">Présentation du text-mining<br />Vidéo, B2B</span>
                         </div>
                     </a>
                 </li>
