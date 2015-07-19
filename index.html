@@ -26,8 +26,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css?v=20150119"/>
     <link rel="stylesheet" type="text/css" href="css/normalize.css?v=20150119"/>
     <link rel="stylesheet" type="text/css" href="css/slider.css?v=20150119" />
-    <link rel="stylesheet" type="text/css" href="css/works.css?v=20150715"/>
-        
+    <link rel="stylesheet" type="text/css" href="css/works.css?v=20150120"/>
+     
     <!--[if lte IE 9]>
     
     <style type="text/css">
@@ -57,32 +57,38 @@
 <!--    --------------   HEADER MENU   ---------------------    -->
 
 	<div id="ie"></div>
-    
-	<div id="header">
-        <div class="m-content">
-        	<div class="m-content_header clearfix">
-          		   <h1 id="home">
-                   		<a href="#global">
-                        	<img src="images/logo.png" alt="webdesigner et solutions artistiques digitales" ></a>
-                   </h1>
-                   <nav id="m-top_nav">
-                       <ul>
-                             
-                             <li class="nav-main goslide"><a href="#jms-slideshow"><img src="icones/actu.png" alt="actualites et introduction au webdesign" />Actus</a></li>
-                             <li class="nav-main main"><a href="#main"><img src="icones/m-real.png" alt="solutions artistiques digitales, interfaces ui web mobile et design print"/>Réalisations</a></li>
-                             <li class="nav-main main"><a href="profil.html"><img src="icones/profil.png" alt="connaître emilie hivert"/>Profil</a></li>
-                             <li class="nav-main cv"><a href="cv.pdf" class="m-btn m-btn_red" title="télécharger le cv" target="_blank">Voir le cv</a></li>
-                      </ul>
-    			   </nav>
-            <!--div id="logos">
-                 <div id="VD"><a href="http://fr.viadeo.com/fr/profile/emilie.hivert" alt="mon viadeo" target="_blank"></a></div>
-                 <div id="Linkedin"><a href="http://lnkd.in/dZv6nyf" alt="mon linkedin" target="_blank"></a></div>
-                 </div-->
-			</div>
-            
+    <div id="header">
+    	<div class="top-site">
+        	<div class="m-content">
+            	<div class="top-paragraphe">
+                        <p class="top-site_paragraphe">Suivez Emilie H.</p>
+                        <a href="https://fr.linkedin.com/pub/emilie-hivert/46/995/425" target="_blank"><span class="ico_reseaux-sociaux linkedin"></span></a>
+                        <a href="http://www.viadeo.com/fr/profile/emilie.hivert" target="_blank"><span class="ico_reseaux-sociaux viadeo"></span></a>
+                         <a href="https://www.behance.net/emycreative" target="_blank"><span class="ico_reseaux-sociaux behance"></span></a>
+                </div>	
+            </div>
+        </div>
+        <div class="no-scroll">
+            <div class="m-content">
+                <div class="m-content_header clearfix">
+                       <h1 id="home">
+                            <a href="#header">
+                                <img src="images/logo.png" alt="webdesigner et solutions artistiques digitales" ></a>
+                       </h1>
+                       <nav id="m-top_nav">
+                           <ul>
+                                 
+                                 <li class="nav-main goslide"><a href="#jms-slideshow"><img src="icones/actu.png" alt="actualites et introduction au webdesign" />Actus</a></li>
+                                 <li class="nav-main main"><a href="#main"><img src="icones/m-real.png" alt="solutions artistiques digitales, interfaces ui web mobile et design print"/>Réalisations</a></li>
+                                 <li class="nav-main main"><a href="profil.html" target="_blank"><img src="icones/profil.png" alt="connaître emilie hivert"/>Profil</a></li>
+                                 <li class="nav-main cv"><a href="cv.pdf" class="m-btn m-btn_red" title="télécharger le cv" target="_blank">télécharger cv</a></li>
+                          </ul>
+                       </nav>
+                </div>
+                
+            </div>
         </div>
     </div>
-    
     
     <!--  ---------------------  GLOBAL = 1ere partie top   ---------------------  -->
     
@@ -95,7 +101,7 @@
         <div id="top">
                 <ul class="top clearfix">
                     <li class="enhaut"><a href="cv.pdf" target="blank"></a></li>
-                    <li class="au_centre"><a href="#bulle"></a></li>
+                    <li class="au_centre"><a href="profil.html"></a></li>
                 </ul>
                 
                 <ul class="menu-vertical">
@@ -429,12 +435,12 @@
     
    <div id="footer"> 
    		<div class="m-content">
-   			<p> l 	Emilie Hivert - web designer  et solutions artistique	 l</p> 
+   			<p>Emilie Hivert - web designer  et solutions artistiques</p> 
         </div>
    </div>
   
 
-    
+<script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="js/jquery.masonry.min.js"></script>
 <script src="js/jquery.history.js"></script>
@@ -445,8 +451,29 @@
 <script type="text/javascript" src="js/jquery.jmslideshow.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.48780.js"></script>
 
-
 <script type="text/javascript">
+var  mn = $(".no-scroll");
+    mns = "header-scroll";
+	hsb = "header-scroll-black";
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > 300 ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > 1000 ) {
+    mn.addClass(hsb);
+  } else {
+    mn.removeClass(hsb);
+  }
+});
+
+
+
 			$(function() {
 			
 				$( '#jms-slideshow' ).jmslideshow();
